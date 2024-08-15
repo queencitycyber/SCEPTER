@@ -29,8 +29,8 @@ SCEPTER (Stealthy Credential Expert Probing Tool for Enumeration and Reconnaissa
 Clone this repository:
 
 ```
-git clone https://github.com/yourusername/scepter.git
-cd scepter
+git clone https://github.com/queencitycyber/SCEPTER
+cd SCEPTER
 ```
 
 🚀 Usage
