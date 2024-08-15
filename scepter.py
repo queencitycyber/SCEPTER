@@ -3,7 +3,7 @@ import json
 import re
 import logging
 from urllib.parse import urlparse, urljoin
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Tuple
 
 import click
 import yaml
@@ -24,8 +24,12 @@ logging.basicConfig(
 log = logging.getLogger("rich")
 
 # Load MFA providers from YAML file
-with open('providers.yaml', 'r') as file:
-    MFA_PROVIDERS = yaml.safe_load(file)
+try:
+    with open('providers.yaml', 'r') as file:
+        MFA_PROVIDERS = yaml.safe_load(file)
+except FileNotFoundError:
+    log.error("providers.yaml file not found. Please ensure it exists in the same directory as the script.")
+    MFA_PROVIDERS = {}
 
 console = Console()
 
