@@ -1,0 +1,61 @@
+Duo:
+  - 'duo\.com'
+  - 'Duo\s+Security'
+  - '/duosecurity/'
+  - 'data-form="primary_form".*Log in'
+  - 'duo.*\.js'
+  - 'auth.*duo'
+
+Microsoft Entra ID:
+  - 'login\.microsoftonline\.com'
+  - 'azure\.com\/oauth2'
+  - 'microsoft.*login'
+  - 'ms.*auth'
+
+Okta:
+  - 'okta\.com'
+  - 'oktacdn\.com'
+  - 'okta.*\.js'
+  - 'okta-signin-widget'
+
+RSA SecurID:
+  - 'rsa\.com'
+  - 'securid'
+  - 'rsa.*auth'
+  - 'securid.*\.js'
+
+CrowdStrike Falcon:
+  - 'crowdstrike\.com'
+  - 'falcon'
+  - 'crowdstrike.*\.js'
+  - 'falcon.*auth'
+
+Auth0:
+  - 'auth0\.com'
+  - 'auth0.*\.js'
+  - 'login.*auth0'
+
+OneLogin:
+  - 'onelogin\.com'
+  - 'onelogin.*\.js'
+  - 'login.*onelogin'
+
+PingIdentity:
+  - 'pingidentity\.com'
+  - 'pingone\.com'
+  - 'ping.*\.js'
+
+ForgeRock:
+  - 'forgerock\.com'
+  - 'forgerock.*\.js'
+  - 'openam'
+
+Generic SAML:
+  - 'saml.*\.js'
+  - 'samlp'
+  - 'saml2'
+
+Generic OAuth:
+  - 'oauth.*\.js'
+  - 'oauth2'
+  - 'authorize\?'
